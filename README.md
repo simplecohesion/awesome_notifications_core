@@ -30,16 +30,26 @@ To use the `awesome_notifications_core` plugin to manage all of your awesome not
 
 ```yaml
 dependencies:
-  awesome_notifications_core: ^0.9.1 # latest
+  awesome_notifications_core: ^0.10.0 # latest
 ```
 
 2. Add all of the other awesome notifications plugins that you want to use in your project, with the version value set to `any`:
 
 ```yaml
 dependencies:
-  awesome_notifications_core: ^0.9.1
-  awesome_notifications: any
-  awesome_notifications_fcm: any # <- The other plugins are optional
+  # Awesome plugins for local notifications
+  awesome_notifications_core: ^0.10.0 # use the latest core version available
+  awesome_notifications: ^0.10.0 # use the latest version available
+
+  # Awesome plugins for remote push notifications
+  awesome_notifications_fcm: ^0.10.0 # use the latest version available
+  # Attention:
+  # The firebase_messaging plugin is not necessary. awesome_notifications_fcm is a replacement for it
+  # firebase_messaging: ^X.X.X 
+
+  # Firebase plugins necessary to use Firebase Cloud Messaging with Awesome Notifications
+  firebase_core: ^X.X.X # use the latest available
+  firebase_crashlytics: ^X.X.X # use the latest available
 ```
 
 ## Tips

@@ -1,6 +1,6 @@
 name: awesome_notifications_core
 description: Provides a convenient way to automatically manage all versions of awesome_notifications plugins, ensuring that they are always compatible with each other and updated.
-version: 0.9.1
+version: 0.10.0
 homepage: https://awesome-notifications.carda.me
 
 environment:
@@ -14,14 +14,15 @@ dependencies:
     sdk: flutter
   plugin_platform_interface: ^2.1.8
 
-dependency_overrides:
-  awesome_notifications: ^0.9.1
-  awesome_notifications_fcm: ^0.9.2
-
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^3.0.1
+  flutter_lints: ^5.0.0
+  yaml: ^3.1.2
+
+dependency_overrides:
+  awesome_notifications: 0.10.0
+  awesome_notifications_fcm: 0.10.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
