@@ -1,3 +1,7 @@
+## [0.10.1] - 2025-02-19
+### Improved
+* Versions of `awesome_notifications` and `awesome_notifications_fcm` upgraded to 0.10.1
+* Documentation updated
 
 ## [0.10.0] - 2024-10-12
 ### Improved
